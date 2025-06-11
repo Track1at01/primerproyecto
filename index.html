@@ -1,37 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quinto formulario</title>
     <link rel="stylesheet" href="style.css">
-<script src="script.js" defer></script>
+    <script src="script.js" defer></script>
 </head>
 
 <body>
     <div class="Contenedor">
         <h1>Super formulario Nº3</h1>
-        <form action=" "></form>
-        <form>   
+        
+        <form id="formulario" >
 
 
             <label for="Nombre">Nombre</label>
-            <input id="Nombre"   type="text" name="Nombre">
+            <input id="Nombre" type="text" name="Nombre">
             <br>
             <br>
             <label for="Apellido">Apellido</label>
-            <input id="Apellido"   type="text" name="Apellido">
+            <input id="Apellido" type="text" name="Apellido">
             <br>
             <br>
             <label for="Contraseña">Contraseña</label>
-            <input id="Contraseña"   type="text" name="Contraseña">
+            <input id="Contraseña" type="text" name="Contraseña">
             <br>
             <br>
-            <button type="button" onclick="Validar()"  >Click</button>
+            <label for="Edad">Edad</label>
+            <input id="Edad" type="number" name="Edad">
+            <br>
+            <br>
+            <button type="button" onclick="enviarFormulario()">Click</button>
 
-            
+
+        </form>
+
+        <div>
+
+            <p id="respuestaNombre">Nombre:</p>
+            <p id="respuestaApellido">Apellido:</p>
+            <p id="respuestaContraseña">Contraseña:</p>
+            <p id="respuestaEdad">Edad:</p>
+
+
         </div>
-</form>
+    </div>
+
+
+
 
 </body>
+
 </html>
